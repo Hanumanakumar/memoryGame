@@ -14,6 +14,7 @@ var moves = 0;
 let status = 0;
 let timer;
 
+// Declaring starCount
 var starCount;
 
 // Getting moves DOM element
@@ -54,7 +55,7 @@ function shuffle(array) {
   return array;
 }
 
-// Displaying cards after shuffled
+// Displaying cards after shuffled. This function works immidiately after loading the window.
 window.onload = initGame();
 
 function initGame() {
@@ -100,7 +101,7 @@ function viewCard() {
     status = status + 1;
   }
 
-  // Filling opened array with clicked cards.
+  // Filling opened[] array with clicked cards.
   opened.push(this);
   if (opened.length == 2) {
     moves = moves + 1;
@@ -114,7 +115,7 @@ function viewCard() {
     //Checking selected cards
     if (opened[0].children[0].classList.item(1)=== opened[1].children[0].classList.item(1)) {
       
-      // If the selected cards are same, the below code is executed.
+      // If the selected cards are same, the below code is executed. Added few styles to DOM elements.
       opened[0].classList.add("match", "disabled");
       opened[0].classList.remove("show", "open");
       opened[1].classList.add("match", "disabled");
@@ -125,7 +126,7 @@ function viewCard() {
       if (matched.length === 16) {
         endGame();
       }
-      // If the selected cards not in equal then below code block is executed
+      // If the selected cards not in equal then below code block is executed. Applied few styles for indication.
     } else {
       opened[0].classList.add("unmatch");
       opened[1].classList.add("unmatch");
@@ -136,6 +137,7 @@ function viewCard() {
         var matched = document.querySelectorAll(".match")
         opened[0].classList.remove("unmatch", "show", "open");
         opened[1].classList.remove("unmatch", "show", "open");
+        //Disabling selected cards temporarily         
         opened.filter.call(cardList, function(item) {
           item.classList.remove('disabled');
           for (var i = 0; i < matched.length; i++) {
