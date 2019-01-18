@@ -21,9 +21,9 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
 _____________________________________________________________
 
-## For implementing Memory Game Project,##
+## For implementing Memory Game Project,
 
-# I did the following steps #
+# I did the following steps 
 
 1.  Got all the cards in to the app.js file by using  '**Array.prototype.slice.call()**' and stored in an array named cardList.
 
