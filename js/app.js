@@ -112,8 +112,8 @@ function viewCard() {
     starResult.innerHTML = starCount + "<i class='fa fa-star star'></i>";
 
     //Checking selected cards
-    if (opened[0].value === opened[1].value) {
-
+    if (opened[0].children[0].classList.item(1)=== opened[1].children[0].classList.item(1)) {
+      
       // If the selected cards are same, the below code is executed.
       opened[0].classList.add("match", "disabled");
       opened[0].classList.remove("show", "open");
