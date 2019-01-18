@@ -156,8 +156,6 @@ var s = 0,
 
 function timeInterval() {
   timer = setInterval(() => {
-
-    console.log(s);
     s = s + 1;
     if (s == 59) {
       s = 0;
