@@ -200,6 +200,11 @@ h1 {
     width: 23%;
     margin: 0 0 1% 0;
   }
+  .score-panel {
+  text-align: left;
+  width: 305px;
+  margin-bottom: 10px;
+}
 }
 
 /*Medium Scale devices*/
