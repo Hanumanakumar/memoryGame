@@ -41,6 +41,9 @@ For implementing Memory Game Project,
 7.  The timer I initialized minutes as 0 and seconds as 0. It repeats based on setInterval function. with 1 second of time interval.
 
 8.  The Rating, for rating I added additional styles with the selector of .star. I diminished the star count based on number of moves.
-    \#If number of moves &lt;= 12 the the star count is 3
-    \#If number of moves  >12  && moves &lt;=16 the the star count is 3
-    \#Otherwise the count is 0.
+
+    #If number of moves &lt;= 12 the the star count is 3
+    
+    #If number of moves  >12  && moves &lt;=16 the the star count is 3
+    
+    #Otherwise the count is 0.
