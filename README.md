@@ -25,7 +25,7 @@ For implementing Memory Game Project,
 
 ### I did the following steps ###
 
-1.  Got all the cards in to the app.js file by using  'Array.prototype.slice.call()' and stored in an array named cardList.
+1.  Got all the cards in to the app.js file by using  '*Array.prototype.slice.call()*' and stored in an array named cardList.
 
 2.  Created a function named initGame, it works when the page loaded. And implemented shuffle function in it.
 
